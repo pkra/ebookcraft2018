@@ -14,7 +14,7 @@ for (let math of document.querySelectorAll("math")){
         math: math.outerHTML,
         format: 'MathML',
         svg: true,
-        globalSVG: true,
+        useGlobalCache: true,
         state: state
     }, function(result){
         math.outerHTML = result.svg;
