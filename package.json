@@ -5,6 +5,7 @@
   "main": "index.js",
   "dependencies": {
     "mathjax-node-sre": "^3.0.0",
+    "node-fetch": "^2.1.1",
     "remarker": "^1.7.1"
   },
   "devDependencies": {},
