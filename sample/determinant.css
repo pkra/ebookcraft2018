@@ -99,6 +99,8 @@ div.column {
 }
 .MJXp-surd {
   vertical-align: top;
+  /* tweak */
+  line-height: 1;
 }
 .MJXp-surd > * {
   display: block !important;
@@ -134,7 +136,8 @@ div.column {
   display: table-row !important;
 }
 .MJXp-mtable {
-  vertical-align: 0.25em;
+  /* tweak */
+  /* vertical-align: 0.25em; */
   margin: 0 0.125em;
 }
 .MJXp-mtable > * {
@@ -243,19 +246,9 @@ div.column {
   transform: scaleX(0.9);
 }
 .MathJax_PHTML .noError {
-  vertical-align: 0em;
   font-size: 90%;
   text-align: left;
   color: black;
   padding: 1px 3px;
   border: 1px solid;
-}
-
-
-
-p+.mwe-math-element, ol+.mwe-math-element, table {
-  display: inline-block;
-  overflow-x: auto;
-  overflow-y: visible;
-  max-width: 100%;
 }
