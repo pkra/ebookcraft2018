@@ -58,7 +58,7 @@ div.column {
   line-height: 1.2;
   text-indent: 0;
   font-family: 'Times New Roman', Times, STIXGeneral, serif;
-  white-space: nowrap;
+  /* white-space: nowrap; */
   border-collapse: collapse;
 }
 .MJXp-display {
@@ -137,6 +137,7 @@ div.column {
 }
 .MJXp-mtable {
   /* tweak */
+  white-space: nowrap;
   /* vertical-align: 0.25em; */
   margin: 0 0.125em;
 }
@@ -148,7 +149,6 @@ div.column {
   display: table-row !important;
 }
 .MJXp-mtd {
-  display: table-cell !important;
   text-align: center;
   padding: 0.5em 0 0 0.5em;
 }

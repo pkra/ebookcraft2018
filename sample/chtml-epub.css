@@ -307,7 +307,8 @@ body :focus .mjx-chtml[tabindex] {
 }
 @font-face {
   font-family: MJXc-TeX-ams-Rw;
-  src: url('../Fonts/MathJax_AMS-Regular.woff') format('woff');
+    src: url('../Fonts/MathJax_AMS-Regular.woff')
+      format('woff');
 }
 @font-face {
   font-family: MJXc-TeX-cal-B;
@@ -320,7 +321,8 @@ body :focus .mjx-chtml[tabindex] {
 }
 @font-face {
   font-family: MJXc-TeX-cal-Bw;
-  src: url('../Fonts/MathJax_Caligraphic-Bold.woff') format('woff');
+    src: url('../Fonts/MathJax_Caligraphic-Bold.woff')
+      format('woff');
 }
 @font-face {
   font-family: MJXc-TeX-frak-R;
@@ -328,7 +330,8 @@ body :focus .mjx-chtml[tabindex] {
 }
 @font-face {
   font-family: MJXc-TeX-frak-Rw;
-  src: url('../Fonts/MathJax_Fraktur-Regular.woff') format('woff');
+    src: url('../Fonts/MathJax_Fraktur-Regular.woff')
+      format('woff');
 }
 @font-face {
   font-family: MJXc-TeX-frak-B;
@@ -341,7 +344,8 @@ body :focus .mjx-chtml[tabindex] {
 }
 @font-face {
   font-family: MJXc-TeX-frak-Bw;
-  src: url('../Fonts/MathJax_Fraktur-Bold.woff') format('woff');
+    src: url('../Fonts/MathJax_Fraktur-Bold.woff')
+      format('woff');
 }
 @font-face {
   font-family: MJXc-TeX-math-BI;
@@ -355,7 +359,8 @@ body :focus .mjx-chtml[tabindex] {
 }
 @font-face {
   font-family: MJXc-TeX-math-BIw;
-  src: url('../Fonts/MathJax_Math-BoldItalic.woff') format('woff');
+    src: url('../Fonts/MathJax_Math-BoldItalic.woff')
+      format('woff');
 }
 @font-face {
   font-family: MJXc-TeX-sans-R;
@@ -363,7 +368,8 @@ body :focus .mjx-chtml[tabindex] {
 }
 @font-face {
   font-family: MJXc-TeX-sans-Rw;
-  src: url('../Fonts/MathJax_SansSerif-Regular.woff') format('woff');
+    src: url('../Fonts/MathJax_SansSerif-Regular.woff')
+      format('woff');
 }
 @font-face {
   font-family: MJXc-TeX-sans-B;
@@ -376,7 +382,8 @@ body :focus .mjx-chtml[tabindex] {
 }
 @font-face {
   font-family: MJXc-TeX-sans-Bw;
-  src: url('../Fonts/MathJax_SansSerif-Bold.woff') format('woff');
+    src: url('../Fonts/MathJax_SansSerif-Bold.woff')
+      format('woff');
 }
 @font-face {
   font-family: MJXc-TeX-sans-I;
@@ -389,7 +396,8 @@ body :focus .mjx-chtml[tabindex] {
 }
 @font-face {
   font-family: MJXc-TeX-sans-Iw;
-  src: url('../Fonts/MathJax_SansSerif-Italic.woff') format('woff');
+    src: url('../Fonts/MathJax_SansSerif-Italic.woff')
+      format('woff');
 }
 @font-face {
   font-family: MJXc-TeX-script-R;
@@ -397,7 +405,8 @@ body :focus .mjx-chtml[tabindex] {
 }
 @font-face {
   font-family: MJXc-TeX-script-Rw;
-  src: url('../Fonts/MathJax_Script-Regular.woff') format('woff');
+    src: url('../Fonts/MathJax_Script-Regular.woff')
+      format('woff');
 }
 @font-face {
   font-family: MJXc-TeX-type-R;
@@ -405,7 +414,8 @@ body :focus .mjx-chtml[tabindex] {
 }
 @font-face {
   font-family: MJXc-TeX-type-Rw;
-  src: url('../Fonts/MathJax_Typewriter-Regular.woff') format('woff');
+    src: url('../Fonts/MathJax_Typewriter-Regular.woff')
+      format('woff');
 }
 @font-face {
   font-family: MJXc-TeX-cal-R;
@@ -413,7 +423,8 @@ body :focus .mjx-chtml[tabindex] {
 }
 @font-face {
   font-family: MJXc-TeX-cal-Rw;
-  src: url('../Fonts/MathJax_Caligraphic-Regular.woff') format('woff');
+    src: url('../Fonts/MathJax_Caligraphic-Regular.woff')
+      format('woff');
 }
 @font-face {
   font-family: MJXc-TeX-main-B;
@@ -426,7 +437,8 @@ body :focus .mjx-chtml[tabindex] {
 }
 @font-face {
   font-family: MJXc-TeX-main-Bw;
-  src: url('../Fonts/MathJax_Main-Bold.woff') format('woff');
+    src: url('../Fonts/MathJax_Main-Bold.woff')
+      format('woff');
 }
 @font-face {
   font-family: MJXc-TeX-main-I;
@@ -439,7 +451,8 @@ body :focus .mjx-chtml[tabindex] {
 }
 @font-face {
   font-family: MJXc-TeX-main-Iw;
-  src: url('../Fonts/MathJax_Main-Italic.woff') format('woff');
+    src: url('../Fonts/MathJax_Main-Italic.woff')
+      format('woff');
 }
 @font-face {
   font-family: MJXc-TeX-main-R;
@@ -447,7 +460,8 @@ body :focus .mjx-chtml[tabindex] {
 }
 @font-face {
   font-family: MJXc-TeX-main-Rw;
-  src: url('../Fonts/MathJax_Main-Regular.woff') format('woff');
+    src: url('../Fonts/MathJax_Main-Regular.woff')
+      format('woff');
 }
 @font-face {
   font-family: MJXc-TeX-math-I;
@@ -460,7 +474,8 @@ body :focus .mjx-chtml[tabindex] {
 }
 @font-face {
   font-family: MJXc-TeX-math-Iw;
-  src: url('../Fonts/MathJax_Math-Italic.woff') format('woff');
+    src: url('../Fonts/MathJax_Math-Italic.woff')
+      format('woff');
 }
 @font-face {
   font-family: MJXc-TeX-size1-R;
@@ -468,7 +483,8 @@ body :focus .mjx-chtml[tabindex] {
 }
 @font-face {
   font-family: MJXc-TeX-size1-Rw;
-  src: url('../Fonts/MathJax_Size1-Regular.woff') format('woff');
+    src: url('../Fonts/MathJax_Size1-Regular.woff')
+      format('woff');
 }
 @font-face {
   font-family: MJXc-TeX-size2-R;
@@ -476,7 +492,8 @@ body :focus .mjx-chtml[tabindex] {
 }
 @font-face {
   font-family: MJXc-TeX-size2-Rw;
-  src: url('../Fonts/MathJax_Size2-Regular.woff') format('woff');
+    src: url('../Fonts/MathJax_Size2-Regular.woff')
+      format('woff');
 }
 @font-face {
   font-family: MJXc-TeX-size3-R;
@@ -484,7 +501,8 @@ body :focus .mjx-chtml[tabindex] {
 }
 @font-face {
   font-family: MJXc-TeX-size3-Rw;
-  src: url('../Fonts/MathJax_Size3-Regular.woff') format('woff');
+    src: url('../Fonts/MathJax_Size3-Regular.woff')
+      format('woff');
 }
 @font-face {
   font-family: MJXc-TeX-size4-R;
@@ -492,7 +510,8 @@ body :focus .mjx-chtml[tabindex] {
 }
 @font-face {
   font-family: MJXc-TeX-size4-Rw;
-  src: url('../Fonts/MathJax_Size4-Regular.woff') format('woff');
+    src: url('../Fonts/MathJax_Size4-Regular.woff')
+      format('woff');
 }
 @font-face {
   font-family: MJXc-TeX-vec-R;
@@ -500,7 +519,8 @@ body :focus .mjx-chtml[tabindex] {
 }
 @font-face {
   font-family: MJXc-TeX-vec-Rw;
-  src: url('../Fonts/MathJax_Vector-Regular.woff') format('woff');
+    src: url('../Fonts/MathJax_Vector-Regular.woff')
+      format('woff');
 }
 @font-face {
   font-family: MJXc-TeX-vec-B;
@@ -513,12 +533,6 @@ body :focus .mjx-chtml[tabindex] {
 }
 @font-face {
   font-family: MJXc-TeX-vec-Bw;
-  src: url('../Fonts/MathJax_Vector-Bold.woff') format('woff');
-}
-
-p+.mwe-math-element, ol+.mwe-math-element, table {
-  display: inline-block;
-  overflow-x: auto;
-  overflow-y: visible;
-  max-width: 100%;
+    src: url('../Fonts/MathJax_Vector-Bold.woff')
+      format('woff');
 }
