@@ -34,8 +34,10 @@ for (let math of document.querySelectorAll("math")){
         useGlobalCache: true,
         state: state
     }, function(result){
+        math.outerHTML = result.svg.replace(/<svg/g,'<svg aria-label="' + result.speakText + '"');
+        // math.setAttribute('aria-label', result.speakText);
         // work around epubcheck false positives
-        math.outerHTML = result.svg.replace(/role="img"/g, '').replace(/focusable="false"/g, '').replace(/aria-labelledby="MathJax-SVG-(.*?)-Title"/g, '');
+        // math.outerHTML = result.svg.replace(/role="img"/g, '').replace(/focusable="false"/g, '').replace(/aria-labelledby="MathJax-SVG-(.*?)-Title"/g, '');
     });
 }
 
