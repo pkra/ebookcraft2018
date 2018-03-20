@@ -1,6 +1,6 @@
 class: center, middle, inverse
 
-# Equations in ebooks: a sample
+# Equations in ebooks: building samples
 
 Peter Krautzberger
 

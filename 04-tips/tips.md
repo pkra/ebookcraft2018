@@ -1,3 +1,15 @@
+class: center, middle, inverse
+
+# Tips & Challenges
+
+ebookcraft 2018
+
+Peter Krautzberger
+
+[krautzource](https://www.krautzource.com)
+
+---
+
 # Tips & Challenges
 
 * reflow

@@ -12,17 +12,16 @@ Peter Krautzberger
 
 # MathML and today's web
 
-* MathML is dead. Long live MathML!
+* MathML is dead. Long live MathML?
 * Similarities and differences to sucessful web technologies.
 * Making more out of MathML on the web
 
 ???
 
-* 10 min
 * MathML is effectively dead
   * Math WG dead
   * browser development by volunteers only and dead
-  * MathML is used on the web only in combination with JS rendering engine
+  * MathML is used on the web **only** in combination with JS rendering engine
     * at most as accessibility alternative, with non-MathML visual rendering
   * => standard frozen. Bad for everyone.
     * eternal hope for the web is preventing the XML success of MathML to move forward
@@ -30,41 +29,27 @@ Peter Krautzberger
   * same: xml-ish
   * meh: MathML is like HTML 3 not HTML 5
     * no semantics
-    * layout in markup (table/font/blink)
+    * layout via markup (table/font/blink)
   * diff: content in attributes, operator dictionary
-* make more of it on the web!
+* make more of it on the web
   * MathML a good basis for rendering for the web
-    * much like print: choose an engine and go
-  * HTML+CSS, SVG, even canvas
-  * but MathML still provides a good vehicle for creating web content
+    * much like print: choose an engine and go!
+  * rendering in HTML+CSS, SVG, even canvas
+  * MathML still provides a good vehicle for creating web content
     * converters to HTML or SVG grow continuously and become simpler
   * additional information can be passed from MathML to web output due to structural similarities
     * see a11y below
 
 ---
 
-# The MathML question
-
-
-* 1998: MathML 1, 2003: MathML 2, 2010: MathML 3, 2014: MathML 3rev2, 2016: MathWG closed
-* MathML is a high-level spec and browser vendors are focused on low-level APIs
-* Both CSS and SVG can provide what MathML provides
-* The state of CSS and SVG (in ebooks) needs improvements
-* The state of web accessibility (in ebooks) needs improvements
-
-**Is MathML helping or hindering?**
-
-
----
-
-# MathML is not usable on the web
+# MathML is not used natively
 
 * MathML is not maintained
   * MathML 3 2010
   * MathML 3 second edition 2014
   * MathWG expired in 2016
-  * lack of activity on lists
-  * IDFP => W3C merger brings publishers' interest but still nothing
+  * lack of activity on public lists
+  * IDFP => W3C merger brings publishers' interest but no more understanding of the situation
 * MathML is not used on the web
   * Available crawler data (and anecdotal evidence from search engine) indicates that MathML is not used significantly.
   * Almost all MathML is rendered with MathJax and native browser rendering is essentially never used.
@@ -125,7 +110,7 @@ Peter Krautzberger
 ---
 
 
-# MathML is not accessible
+# MathML and accessibility
 
 * approaches to accessibility
   * visual
@@ -187,10 +172,23 @@ Peter Krautzberger
 * iBooks
   * all problems wrt to native implementations apply
   * requires detailed testing
-    * Anecdotal evidence: every time I'm asked to look at content, I find a new bug
+    * Anecdotal evidence: every time I'm asked to look at native MML, I find a new bug
   * unstable implementations
-    * fraction line lost
-    * OL+LI+MATHBLOCK
+    * fraction line unstable -- no bug filed, accidentally fixed over a year later
+    * current example: OL+LI+MATHBLOCK => LI is dropped
   * iBooks Author format
     * iBooks uses Pages layout engine not WebKit/Safari
     * yet more differences
+
+---
+
+# The MathML question
+
+* 1998: MathML 1, 2003: MathML 2, 2010: MathML 3, 2014: MathML 3rev2, 2016: MathWG closed
+* MathML is a high-level spec and browser vendors are focused on low-level APIs
+* Both CSS and SVG can provide what MathML provides
+* Tools can enrich MathML to provide textual descriptions and more leveraging ARIA
+* The state of CSS and SVG (in ebooks) needs improvements
+* The state of web accessibility (in ebooks) needs improvements
+
+**Is MathML helping or hindering?**

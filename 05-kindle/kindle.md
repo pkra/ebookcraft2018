@@ -1,4 +1,16 @@
-# On Kindle
+class: center, middle, inverse
+
+# Equation rendering in Kindle
+
+ebookcraft 2018
+
+Peter Krautzberger
+
+[krautzource](https://www.krautzource.com)
+
+---
+
+# Summary
 
 * required reading: [What Kindle does behind the scenes, Jiminy Panoz](https://medium.com/@jiminypan/what-kindle-does-behind-the-scenes-3d1be22efce3)
 * HTML+CSS - a dumpster fire
