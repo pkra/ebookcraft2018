@@ -33,5 +33,5 @@ mj({
     styles.textContent = result.css;
     document.head.appendChild(styles);
 
-    fs.writeFile('out.html', dom.serialize());
+    fs.writeFile('chtml.html', dom.serialize());
 })

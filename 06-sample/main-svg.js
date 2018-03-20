@@ -15,14 +15,16 @@ const { JSDOM } = jsdom;
 const input = fs.readFileSync(process.argv[2]).toString();
 
 const dom = new JSDOM(input);
-const document =     dom.window.document;
+const document = dom.window.document;
+// Set to `false` for self-contained SVGs
+const GLOBAL = true;
 const state = {};
 // work-around https://github.com/mathjax/MathJax-node/issues/398
 mj({
     math: '<math><mtext/></math>',
     format: 'MathML',
     svg: true,
-    useGlobalCache: true,
+    useGlobalCache: GLOBAL,
     state: state
 });
 
@@ -42,12 +44,12 @@ for (let math of document.querySelectorAll("math")){
 }
 
 mj({}, function(){
-    if (state.defs){
+    if (GLOBAL && state.defs){
         const svg = document.createElement('svg');
         svg.setAttribute('style', 'display: none');
         svg.appendChild(state.defs);
         // attach at end for convenience (though top is faster)
         document.body.appendChild(svg);
-    }
-    fs.writeFile('out.html', dom.serialize());
+    };
+    fs.writeFile('svg.html', dom.serialize());
 })
