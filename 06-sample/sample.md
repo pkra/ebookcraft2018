@@ -25,6 +25,7 @@ Peter Krautzberger
 * give it a spin
 * OR tweak the CSS in the PHTML sample
   * e.g., disable `no-wrap` to get reflow
+* OR post-process `determinant-svg.xhtml` using `main-png.js` to generate PNGs
 
 # What can we learn from "Determinant" (Wikipedia)
 
