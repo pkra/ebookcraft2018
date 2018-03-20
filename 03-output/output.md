@@ -82,24 +82,60 @@
 
 ---
 
-# Tools
+# Rendering tools
 
-* MathML
-  * MathJax
-  * jqmath
-  * CSS stylesheets [Don't!]
-    * cf. web platform compatibility
-    * http://jkorpela.fi/math/, http://www.zipcon.net/~swhite/docs/math/math.html
-    * https://github.com/search?langOverride=&p=1&q=mathml+css&repo=&start_value=1&type=Repositories
-* TeX
-  * MathJax
-  * MathQuill
-  * mathlive
-  * KaTeX
-* AsciiMath etc
-  * AsciiMath
-  * jqmath
-* Microsoft Office
-  * OMML ("ECMA Math")
-  * "Unicode Math"
+
+* Rendering tools for & of the web
+      * MathML: <a href="https://www.mathjax.org">MathJax</a>, <a href="https://mathscribe.com/author/jqmath.html">jqmath</a>, <a href="http://www.fmath.info/mathml.jsp">fmath</a>, CSS stylesheets (Don't!)
+      * Other: <a href="http://mathquill.com/">MathQuill</a>, <a href="http://mathlive.io/">mathlive</a>, <a href="https://khan.github.io/KaTeX/">KaTeX</a>
+      * Proprietary: <a href="http://wiris.com/">WIRIS</a>, <a href="http://sharemath.com/">ShareMath</a>
+      * Generic workflows
+* Client vs server-side
+
+
+???
+
+* tools and techniques for rendering mathematics in a web context
+* MathML rendering tools
+  * MathJax, jqmath, fmath
+* CSS stylesheets [Don't!]
+  * cf. web platform compatibility
+  * http://jkorpela.fi/math/, http://www.zipcon.net/~swhite/docs/math/math.html
+  * https://github.com/search?langOverride=&p=1&q=mathml+css&repo=&start_value=1&type=Repositories
+* other rendering tools
+  * MathQuill, mathlive, KaTeX
+* proprietary solutions (WIRIS, sharemath)
+* client vs server-side
+  * go server for performance
+  * add client for enhancements
+* a word on web-based print (Antenna House, Prince, Vivliostyle)
+
+
+---
+
+# Accessible math on the web
+
+* MathML and assistive technology
+* (Non-)Interoparability with web accessibility
+* <details>
+  <summary>Tools for equations+web accessibility</summary>
+  Automated: <a href="https://github.com/zorkow/speech-rule-engine">Speech Rule Engine</a> (<a href="https://codepen.io/pkra/full/oWjwNM/">demo</a>) (also: proprietary solutions).<br>
+  Manual: ARIA labels
+  </details>
+* Other authoring formats and accessibility
+
+???
+* MathML and accessibility
+  * understanding MathML's role
+  * state of assistive technology for "plain" MathML
+    * JAWS
+    * VoiceOver
+    * ChromeVox
+    * MathPlayer
+* no interoperability with other standards (HTML, ARIA etc)
+  * :-(
+* tools for making math content accessible
+  * automated (speech-rule-engine)
+    * proprietary: Desmos, Khan Acadeym
+  * manual (ARIA)
 
