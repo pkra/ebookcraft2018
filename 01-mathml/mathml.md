@@ -1,17 +1,59 @@
-# MathML
+class: center, middle, inverse
+
+# A word on MathML and equation layout
+
+ebookcraft 2018
+
+Peter Krautzberger
+
+[krautzource](https://www.krautzource.com)
 
 ---
 
-# The question
+# MathML and today's web
 
-## Is MathML helping or hindering?
+* MathML is dead. Long live MathML!
+* Similarities and differences to sucessful web technologies.
+* Making more out of MathML on the web
+
+???
+
+* 10 min
+* MathML is effectively dead
+  * Math WG dead
+  * browser development by volunteers only and dead
+  * MathML is used on the web only in combination with JS rendering engine
+    * at most as accessibility alternative, with non-MathML visual rendering
+  * => standard frozen. Bad for everyone.
+    * eternal hope for the web is preventing the XML success of MathML to move forward
+* similarities and differences
+  * same: xml-ish
+  * meh: MathML is like HTML 3 not HTML 5
+    * no semantics
+    * layout in markup (table/font/blink)
+  * diff: content in attributes, operator dictionary
+* make more of it on the web!
+  * MathML a good basis for rendering for the web
+    * much like print: choose an engine and go
+  * HTML+CSS, SVG, even canvas
+  * but MathML still provides a good vehicle for creating web content
+    * converters to HTML or SVG grow continuously and become simpler
+  * additional information can be passed from MathML to web output due to structural similarities
+    * see a11y below
+
+---
+
+# The MathML question
+
 
 * 1998: MathML 1, 2003: MathML 2, 2010: MathML 3, 2014: MathML 3rev2, 2016: MathWG closed
 * MathML is a high-level spec and browser vendors are focused on low-level APIs
 * Both CSS and SVG can provide what MathML provides
 * The state of CSS and SVG (in ebooks) needs improvements
 * The state of web accessibility (in ebooks) needs improvements
-*
+
+**Is MathML helping or hindering?**
+
 
 ---
 

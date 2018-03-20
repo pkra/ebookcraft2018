@@ -1,4 +1,14 @@
+class: center, middle, inverse
+
 # Input formats for equation layout
+
+ebookcraft 2018
+
+Peter Krautzberger
+
+[krautzource](https://www.krautzource.com)
+
+---
 
 # Authoring: Common formats
 
@@ -15,7 +25,9 @@
     <summary>AsciiMath etc</summary>
      <code>x = (-b +- sqrt(b^2-4ac))/(2a)</code>
     </details>
-* [OOML](https://blogs.msdn.microsoft.com/murrays/2006/10/06/mathml-and-ecma-math-omml/)
+* Microsoft Office
+  * [OOML](https://blogs.msdn.microsoft.com/murrays/2006/10/06/mathml-and-ecma-math-omml/) ("ECMA Math")
+  * "Unicode Math"
 * Programming languages, CAS etc
 
 
