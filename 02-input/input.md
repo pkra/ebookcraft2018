@@ -25,9 +25,7 @@ Peter Krautzberger
     <summary>AsciiMath etc</summary>
      <code>x = (-b +- sqrt(b^2-4ac))/(2a)</code>
     </details>
-* Microsoft Office
-  * [OOML](https://blogs.msdn.microsoft.com/murrays/2006/10/06/mathml-and-ecma-math-omml/) ("ECMA Math")
-  * "Unicode Math"
+* Microsoft Office ([OOML](https://blogs.msdn.microsoft.com/murrays/2006/10/06/mathml-and-ecma-math-omml/) "ECMA Math", "Unicode Math")
 * Programming languages, CAS etc
 
 
@@ -88,16 +86,11 @@ Peter Krautzberger
 # Equations in XML workflows
 
 * [MathML, MathML, and MathML](https://www.w3.org/TR/MathML/)
-* <details>
-    <summary>LaTeX (subsets)</summary>
-    e.g., <a href="https://www.mathjax.org">MathJax</a>, <a href="https://www.mediawiki.org/wiki/Texvc">texvc</a>
-    </details>
-* Really, use the Source, Luke!
-
-
+* LaTeX (subsets)
+  * e.g., <a href="https://www.mathjax.org">MathJax</a>
+  * e.g., <a href="https://www.mediawiki.org/wiki/Texvc">texvc</a>
 
 ???
-* 10min
 * MathML
   * why it  dominates
     * early editing tool adoption (e.g., MathType)
@@ -106,52 +99,18 @@ Peter Krautzberger
     * eternal promise of the web
   * how is it integrated?
     * most formats integrate it directly (e.g. JATS/BITS)
-    * in XML, many features are handled separately desipte features in MathML (e.g., mlabeldtr, annotation system)
+    * in XML, many features are handled separately despite features in MathML (e.g., mlabeldtr, annotation system)
     * binary image rendering history still plays big role
 * LaTeX subsets
-  * very common suggestion even in XML, e.g., MathJax in JATS4Reuse
-  * fixed grammars are straight forward (e.g., texvc for MediaWiki)
-  * main issue: general macro resolution is hard
+  * very common suggestion even in XML, e.g., JATS4Reuse
+  * fixed subsets and/or grammars helped solve many problems (e.g., texvc for MediaWiki,, MathJax)
+  * main issue: general macro resolution is hard, mixed content is hard
     * still many vendors seem to have found decent proprietary solutions
-* Use the Source!
+* Always keep the Source!
   * keep sources whenever you can, it always adds value
-* Common Problems and Challenges
-  * QA problems
-    * usually QA means print output
-    * QA is always engine specific
-      * leading to problems when using different engines (e.g., print and web)
-  * rendering problems (e.g, wrong stretchy rules, confusion about unclear display style rules)
-  * mathvariants vs (non-BMP) Unicode
-    * Unicode math alphabets come out of print, dubious elsewhere
-  * markup vs font engines
-    * combining characters (e.g., accents)
-    * in markup or via font/unicode renderin?
-  * the equation label conundrum
-    * document-level information (especially when auto-numbering)
-    * where to keep them in an XML workflow
-  * storing alternative formats
-    * in XML (e.g. JATS <alternatives>) vs MathML <annotation>
-    * source formats
-      * e.g., LaTeX: store full documents or just (math mode?) snippet
-    * alttext
-    * altimages
-  * integrating rendering information in XML workflows
-    * SVG
-    * HTML+CSS doesn't quite fit
-  * limitations of both MathML and Unicode
-    * mathcal
-    * non-standard glyphs (Wiley Chem)
-      * PUA-heavy fonts
-      * TeX legacy (St Mary Road)
-  * limitations of MathML
-    * commutative diagrams, graphs etc
-    * multi-equation alignment
-    * entry points for XML/HTML
-
 ---
 
-# XML workflows: Common Challenges
-
+# Common Challenges
 
 * QA & rendering issues
 * math variants vs Unicode
@@ -162,11 +121,10 @@ Peter Krautzberger
 
 
 ???
-* 5min
 * Common Problems and Challenges
   * QA problems
     * usually QA means print output
-    * QA is always engine specific
+    * => QA is **always** engine specific
       * leading to problems when using different engines (e.g., print and web)
   * rendering problems (e.g, wrong stretchy rules, confusion about unclear display style rules)
   * mathvariants vs (non-BMP) Unicode
@@ -180,20 +138,20 @@ Peter Krautzberger
   * storing alternative formats
     * in XML (e.g. JATS <alternatives>) vs MathML <annotation>
     * source formats
-      * e.g., LaTeX: store full documents or just (math mode?) snippet
+      * e.g., LaTeX: store full documents or just a (math mode?) snippet
     * alttext
     * altimages
   * integrating rendering information in XML workflows
     * SVG
-    * HTML+CSS doesn't quite fit
+    * HTML+CSS never quite fits
   * limitations of both MathML and Unicode
     * mathcal
-    * non-standard glyphs (Wiley Chem)
+    * non-standard glyphs (e.g., Wiley Chem)
       * PUA-heavy fonts
-      * TeX legacy (St Mary Road)
+      * TeX legacy (e.g., St Mary Road)
   * limitations of MathML
     * commutative diagrams, graphs etc
     * multi-equation alignment
-    * entry points for XML/HTML
+    * mixed content: entry points for XML/HTML
 
 ---
