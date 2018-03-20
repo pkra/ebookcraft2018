@@ -1,7 +1,8 @@
 
-## Realistic equation layout
+# Output formats for equation layout
 
-### Choose your adventure
+
+# Choose your adventure
 
 * There is no silver bullet
   * and obviously MathML is not it
@@ -27,9 +28,23 @@
     * textual alternatives
     * deep labels
 
-## HTML-CSS
+---
 
-### To font or not to font
+# MathML
+
+* RS specific checks necssary
+
+* MathJax-enabled RS
+  * you'll have to check how (SVG, HTML)
+  * you'll have to adapt (e.g., styling won't affect SVG)
+  * what if they only sometimes use it?
+  * seems unreliable
+
+---
+
+# HTML-CSS
+
+## To font or not to font
 
 * High-quality is possible but font-dependent
 * Medium-quality is possible without font-dependence
@@ -41,29 +56,9 @@
     * duplicate content + media-queries
   * RS CSS frequently cause minor glitches
 
-### Tools
+---
 
-* MathML
-  * MathJax
-  * jqmath
-  * CSS stylesheets [Don't!]
-    * cf. web platform compatibility
-    * http://jkorpela.fi/math/, http://www.zipcon.net/~swhite/docs/math/math.html
-    * https://github.com/search?langOverride=&p=1&q=mathml+css&repo=&start_value=1&type=Repositories
-* TeX
-  * MathJax
-  * MathQuill
-  * mathlive
-  * KaTeX
-* AsciiMath etc
-  * AsciiMath
-  * jqmath
-* Microsoft Office
-  * OMML ("ECMA Math")
-  * "Unicode Math"
-
-
-## SVG
+# SVG
 
 * best for most equation content
   * especially traditional / print layout
@@ -84,3 +79,27 @@
   * moving surrounding non-whitespace (punctuation, hypen) into wrapper to avoid reflow artifacts
   * selection / highlighting
     * browser engines lack support
+
+---
+
+# Tools
+
+* MathML
+  * MathJax
+  * jqmath
+  * CSS stylesheets [Don't!]
+    * cf. web platform compatibility
+    * http://jkorpela.fi/math/, http://www.zipcon.net/~swhite/docs/math/math.html
+    * https://github.com/search?langOverride=&p=1&q=mathml+css&repo=&start_value=1&type=Repositories
+* TeX
+  * MathJax
+  * MathQuill
+  * mathlive
+  * KaTeX
+* AsciiMath etc
+  * AsciiMath
+  * jqmath
+* Microsoft Office
+  * OMML ("ECMA Math")
+  * "Unicode Math"
+

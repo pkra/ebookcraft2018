@@ -1,0 +1,8 @@
+port: 6275
+dest: build
+source: sample.md
+title: 'Equations in ebooks: A sample | ebookcraft 2018'
+assets: ['../img']
+css: '{}'
+cssFiles: ['../assets/css/style.css']
+scriptFiles: ['../assets/js/index.js']

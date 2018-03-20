@@ -1,11 +1,10 @@
-
-
-### epub Reading systems
+# Some test results Reading systems
 
 - Readium JS
   - Chrome App: all ok
+    - user font setting is not applied to math but perhaps not intentional
 - Adobe Digital Edition
-  - Windows: HTML ok, SVG ok, NVDA ok
+  - Windows: C/PHTML ok, SVG ok, a11y: NVDA ok
   - Android: SVG both, CHTML ok, Talkback OK, PHTML crashes (also: sideloading trouble)
   - iOS: SVG ok, VO fails on SVG, C/PHTML crashes app
 - Bluefire Cloudshelf
@@ -16,7 +15,7 @@
     - both SVG ok. No a11y
     - C/PHTML both crash the app
 - iBooks
-  - SVG ok but VO ignores (cf. notes on aria-labelledby ), CHTML ok but VO ignores aria-label, PHTML ok
+  - SVG ok but VO ignores it (cf. notes on aria-labelledby but might also a temporary regression), CHTML ok but VO ignores aria-label, PHTML ok
 - Kobo
   - Android: SVG ok, CHTML no fonts, PHTML ok, Talkback CHTML ok, SVG skipped
   - iOS: SVG ok, CHTML glitches, PHTML ok, VO fails on svgs, skips blockCHTML
@@ -29,6 +28,8 @@
   - iOS: SVG ok (despite warning "can't do epub3"), C/PHTML crashes
   - Android: SVG ok (despite warning "multimedia"), C/PHTML crashes, talkback: can't enter webview
 - random
+  - Edge: all ok. known a11y problems
+    - inline SVGs with pop-out!
   - Lithium
     - Android: SVG ok, PHTML ok, CHTML CSS screwed up, talkback ok
   - Aldiko, Gitden, Helicon etc

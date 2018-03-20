@@ -1,0 +1,8 @@
+port: 6275
+dest: build
+source: mathml.md
+title: 'Equations in ebooks | ebookcraft 2018'
+assets: ['../img']
+css: '{}'
+cssFiles: ['../assets/css/style.css']
+scriptFiles: ['../assets/js/index.js']

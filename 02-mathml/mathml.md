@@ -1,21 +1,36 @@
-## MathML
+# MathML
 
-### MathML is not usable on the web
+---
+
+# The question
+
+## Is MathML helping or hindering?
+
+* 1998: MathML 1, 2003: MathML 2, 2010: MathML 3, 2014: MathML 3rev2, 2016: MathWG closed
+* MathML is a high-level spec and browser vendors are focused on low-level APIs
+* Both CSS and SVG can provide what MathML provides
+* The state of CSS and SVG (in ebooks) needs improvements
+* The state of web accessibility (in ebooks) needs improvements
+*
+
+---
+
+# MathML is not usable on the web
 
 * MathML is not maintained
   * MathML 3 2010
   * MathML 3 second edition 2014
   * MathWG expired in 2016
-  * no activity on lists
-  * IDFP => W3C merger
+  * lack of activity on lists
+  * IDFP => W3C merger brings publishers' interest but still nothing
 * MathML is not used on the web
-  * All available crawler data (and anecdotal evidence from search engine) indicates that MathML is not used significantly.
-  * Almost all MathML is rendered with MathJax, thus native browser rendering is essentially never used.
-* MathML is not supported by browsers
+  * Available crawler data (and anecdotal evidence from search engine) indicates that MathML is not used significantly.
+  * Almost all MathML is rendered with MathJax and native browser rendering is essentially never used.
+* MathML is not supported by browser vendors
+    * Google and Microsoft have shown no indication that they will seriously consider it
   * MathML implementations in Gecko and WebKit are volunteer implementations, effectively unmaintained  (~1 minor change per year)
     * it's down to just 1 volunteer developer
-    * No indication that Mozilla and Apple do know, follow or care the state of the implementations (despite public statements to the contrary)
-    * Google and Microsoft have shown no indication that they will seriously consider it
+    * No indication that Mozilla and Apple know, follow or care about the state of the implementations (despite public statements to the contrary)
   * https://bugs.webkit.org/buglist.cgi?component=MathML&product=WebKit&resolution=---
     * e.g., https://bugs.webkit.org/buglist.cgi?quicksearch=voiceover%20mathml
     * e.g., https://bugs.webkit.org/buglist.cgi?component=MathML&order=changeddate%20DESC%2Cresolution%2Ccomponent%2Cbug_status%2Cpriority%2Cassigned_to%2Cbug_id&product=WebKit&query_format=advanced&resolution=FIXED
@@ -64,7 +79,11 @@
   * 2) or web developers do not care (they don't test their content, they don't report bugs or care if bugs get fixed)
   * which seems more likely?
 
-### MathML is not accessible
+
+---
+
+
+# MathML is not accessible
 
 * approaches to accessibility
   * visual
@@ -114,7 +133,7 @@
   * client or server-side
   *
 
-### in real life ebooks
+# in real life ebooks
 
 * MathJax-enabled RSs (e.g. Readium)
   * this is not always clearly documented by RSs

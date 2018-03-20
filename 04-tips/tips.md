@@ -1,5 +1,4 @@
-
-### Tips & Challenges
+# Tips & Challenges
 
 * reflow
   * no reliable way except manual
@@ -16,6 +15,15 @@
   * for all others `svg { max-width: 100%}` should do the trick
   * some RS force SVG `width: 100%` (eg. Bluefire Cloudshelf)
     * try `width:auto!important`
+  * negative margins
+* mixed content
+  * text and math
+    * LaTeX \intertext
+    * the braced equation numbering
+    * the PLOS example with similar braces around labeled equations
+  * graphics and math
+    * diagrams (tikz)
+  * => you're often better off modifying the output than the MathML
 * SVG a11y
   * landscape can be iffy
   * but getting better
@@ -27,7 +35,9 @@
   * move surrounding text into a wrapping element to avoid odd line-breaks (especially inline)
 
 
-## Legacy approaches and their drawbacks
+---
+
+# Legacy approaches and their drawbacks
 
 * most popular approach: mix&match
   * HTML-math for easy / inline

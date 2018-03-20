@@ -1,8 +1,0 @@
-port: 6275
-dest: build
-source: slides.md
-title: 'Equations in ebooks | ebookcraft 2018'
-assets: ['img']
-css: '{}'
-cssFiles: ['assets/css/style.css']
-scriptFiles: ['assets/js/index.js']
