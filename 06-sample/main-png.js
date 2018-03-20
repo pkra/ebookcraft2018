@@ -34,12 +34,14 @@ const main = async function(inputstring) {
   for (let i = 0; i < svgs.length; i++) {
     console.log('Equation ' + i);
     const svg = svgs[i];
-    await svg2png(svg.outerHTML, './img/' + i + '.png', page);
+    const filename = './img/' + i + '.png';
+    // await svg2png(svg.outerHTML, filename, page);
     const img = document.createElement('img');
-    img.setAttribute('src', i + '.png');
-    img.setAttribute('width', svg.getAttribute('width'));
-    img.setAttribute('height', svg.getAttribute('height'));
+    img.setAttribute('src',  filename);
+    // img.setAttribute('width', svg.getAttribute('width'));
+    // img.setAttribute('height', svg.getAttribute('height'));
     img.setAttribute('style', svg.getAttribute('style'));
+    img.setAttribute('alt', svg.querySelector('title').innerHTML)
     svg.parentNode.replaceChild(img, svg);
   }
   await browser.close();
