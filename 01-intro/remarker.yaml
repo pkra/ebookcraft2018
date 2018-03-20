@@ -4,5 +4,5 @@ source: intro.md
 title: 'Equations in ebooks | ebookcraft 2018'
 assets: ['../img']
 css: '{}'
-cssFiles: ['../assets/css/style.css']
-scriptFiles: ['../assets/js/index.js']
+cssFiles: ['./assets/css/style.css']
+scriptFiles: ['./assets/js/index.js']
