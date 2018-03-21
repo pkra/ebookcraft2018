@@ -1,6 +1,6 @@
 # ebookcraft 2018: Equations in ebooks
 
-Materials for a workshop.
+Materials for a workshop. [github.com/pkra/ebookcraft2018](https://github.com/pkra/ebookcraft2018)
 
 ## Summary
 
