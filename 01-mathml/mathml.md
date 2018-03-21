@@ -1,6 +1,6 @@
 class: center, middle, inverse
 
-# A word on MathML and equation layout
+# MathML and equation layout
 
 ebookcraft 2018
 
