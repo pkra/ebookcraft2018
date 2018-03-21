@@ -22,7 +22,7 @@ Peter Krautzberger
   * Math WG dead
   * browser development by volunteers only and dead
   * MathML is used on the web **only** in combination with JS rendering engine
-    * at most as accessibility alternative, with non-MathML visual rendering
+    * sometimes left in the page as an (visually hidden) accessibility alternative
   * => standard frozen. Bad for everyone.
     * eternal hope for the web is preventing the XML success of MathML to move forward
 * similarities and differences
