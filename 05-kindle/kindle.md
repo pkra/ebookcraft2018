@@ -14,6 +14,17 @@ Peter Krautzberger
 
 * required reading: [What Kindle does behind the scenes, Jiminy Panoz](https://medium.com/@jiminypan/what-kindle-does-behind-the-scenes-3d1be22efce3)
 * HTML+CSS - a dumpster fire
+* SVG - with care
+* PNG - pragmatic
+* Addendum
+  * proprietary formats
+  * Claimed MathML support
+
+???
+
+
+* required reading: [What Kindle does behind the scenes, Jiminy Panoz](https://medium.com/@jiminypan/what-kindle-does-behind-the-scenes-3d1be22efce3)
+* HTML+CSS - a dumpster fire
   * fonts are not applied
   * most advanced CSS gets broken
 * SVG

@@ -13,44 +13,85 @@ Peter Krautzberger
 # Tips & Challenges
 
 * reflow
-  * no reliable way except manual
-    * font-less CSS has best chance
-    * active research into new approaches for breaking expressions up
-  * left-align with labels on left to optimize space and rhythm
+  * "optimal" reflow
+  * media-queries
+  * optimize space and rhythm
 * overflow
-  * most content will have monolithic design
-    * equation layout is full of tables (equation arrays, matrices, manual line-breaks)
-  * overflow:scroll - sad puppy => https://twitter.com/JiminyPan/status/973497340093960192
-  * most RS will shrink SVG to fit (like other images)
-    * some will have pop-out functionality
-    * but often issues with inline SVG
-  * for all others `svg { max-width: 100%}` should do the trick
-  * some RS force SVG `width: 100%` (eg. Bluefire Cloudshelf)
-    * try `width:auto!important`
-  * negative margins
+  * most content is monolithic
+  * `overflow:scroll` = sad puppy https://twitter.com/JiminyPan/status/973497340093960192
+  * shrink SVG to fit
+  * watch out for negative margins
+    * especially when authors think about centered content, they may add negative spacing
+    * consider stripping them systematically
 * mixed content
   * text and math
-    * LaTeX \intertext
-    * the braced equation numbering
-    * the PLOS example with similar braces around labeled equations
   * graphics and math
+* SVG a11y
+  * landscape can be iffy
+  * beware epubcheck false positives
+  * beware role="math"
+  * handling surrounding non-whitespace
+
+???
+* reflow
+  * "optimal" reflow: still manual
+    * font-less CSS has best chance
+    * active research into new approaches for breaking expressions up
+  * media-queries + duplicate content works
+    * multiple versions using automatic line-breaks
+    * add media-queries
+    * rare in the wild (e.g., Hindawi)
+  * to optimize space and rhythm
+    * left-align
+    * labels on left
+    * handle hardest cases manually (i.e., rewrite input or output)
+* overflow
+  * most equation content will have "monolithic" design
+    * often print-first
+    * full of tables (equation arrays, matrices, manual line-breaks)
+    * full of manual line-breaks and positioning (to fit print)
+  * `overflow:scroll` is a sad puppy https://twitter.com/JiminyPan/status/973497340093960192
+  * shrink SVG to fit (like other images)
+    * most RS will
+    * some will have pop-out functionality
+    * but often issues with inline SVG
+    * for all others `svg { max-width: 100%}` should do the trick
+  * some RS force SVG `width: 100%` (eg. Bluefire Cloudshelf)
+    * try `width:auto!important`
+  * watch out for negative margins
+    * especially when authors think about centered content, they may add negative spacing
+    * consider stripping them systematically
+* mixed content
+  * text and math
+    * e.g., LaTeX \intertext
+    * e.g., braced equation-ish numbering
+    * e.g., the PLOS example with similar braces around labeled equations
+  * graphics and math
+    * elementary; e.g., explanatory diagrams for addition/multiplication
+    * research: commutative diagrams etc
     * diagrams (tikz)
-  * => you're often better off modifying the output than the MathML
+  * => you're usually better off modifying the output than e.g., MathML
 * SVG a11y
   * landscape can be iffy
   * but getting better
-* beware role="math"
-  * derived from role="img"
-  * spec only recently gave a valid example
-  * often leads to AT ignoring everything
-* surrounding text
-  * move surrounding text into a wrapping element to avoid odd line-breaks (especially inline)
-
+  * beware epubcheck false positives
+  * beware role="math"
+    * derived from role="img"
+    * spec only recently gave a valid example
+    * often leads to AT ignoring everything
+  * surrounding text
+    * move surrounding text into a wrapping element to avoid odd line-breaks (especially inline)
 
 ---
 
 # Legacy approaches and their drawbacks
 
+* most popular approach: mix&match
+* Issues
+  * visual inconsistencies
+  * accessibility
+
+???
 * most popular approach: mix&match
   * HTML-math for easy / inline
   * binary images for display

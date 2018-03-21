@@ -44,6 +44,21 @@ Peter Krautzberger
 
 # MathML is not used natively
 
+
+* MathML is not maintained
+* MathML is not used natively
+* MathML is not supported by browser vendors
+* Limitations of "native" implementations
+  * MathML's limitations
+  * implementations are partial
+  * gaps in existing implementations
+  * require specialized fonts
+  * Innumerable nasty little bugs
+
+Either native MathML implementations are not used or web developers do not care.
+
+
+???
 * MathML is not maintained
   * MathML 3 2010
   * MathML 3 second edition 2014
@@ -109,9 +124,18 @@ Peter Krautzberger
 
 ---
 
-
 # MathML and accessibility
 
+* approaches to accessibility
+  * visual
+  * semantic
+* visual a11y fails
+* semantic fails
+* (non)integration with web platform
+* AT support
+* speech-rule-engine
+
+???
 * approaches to accessibility
   * visual
     * reading layout: many non-visual users ask only for the same input as visual users
@@ -161,6 +185,11 @@ Peter Krautzberger
   *
 
 # in real life ebooks
+
+* MathJax-enabled RSs (e.g. Readium)
+* iBooks
+
+???
 
 * MathJax-enabled RSs (e.g. Readium)
   * this is not always clearly documented by RSs
