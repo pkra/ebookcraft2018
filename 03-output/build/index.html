@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Equations in ebooks | ebookcraft 2018</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link href="./assets/css/style.css" rel="stylesheet" />
+    <style type="text/css">
+      {}
+    </style>
+  </head>
+  <body>
+    <textarea id="source">class: center, middle, inverse
+
+# Output Formats for equation layout
+
+ebookcraft 2018
+
+Peter Krautzberger
+
+[krautzource](https://www.krautzource.com)
+
+---
+
+# Choose your adventure
+
+* There is no silver bullet (but)
+  * platforms
+  * content
+  * expectations
+  * effort/resources
+* real-world solutions
+  * Artisinal equation layout
+  * HTML+CSS with(out) font dependence
+  * SVG
+  * binary images
+  * MathML
+* accessibility
+  * visual quality
+  * non-visual
+
+???
+* There is no silver bullet
+  * and obviously MathML is not it
+* main factors
+  * platforms
+  * content (amount, type)
+  * expectations (visua&a11y quality)
+  * effort/resources
+* real-world solutions
+  * Artisinal equation layout
+    * e.g., https://web.archive.org/web/20170904092652/http://lea.verou.me/2013/03/use-mathml-today-with-css-fallback/
+    * e.g., https://codepen.io/pkra/pen/OQQVgx
+  * HTML+CSS with font dependence
+  * HTML+CSS without font dependence
+  * SVG
+  * binary images
+  * native MathML
+* accessibility
+  * visual quality
+    * high resolution
+    * fit into surroundings
+    * accuracy in content
+  * non-visual
+    * textual alternatives
+    * deep labels
+
+---
+
+# Native MathML
+
+* Platform specific RS
+* MathJax-enabled RS
+
+???
+* Platform specific
+  * iBooks
+  * Azardi (Gecko-based desktop app)
+  * specialized QC required
+* MathJax-enabled RS
+  * you'll have to check how (SVG, HTML-CSS, CommmonHTML, PreviewHTML)
+  * you'll have to adapt (e.g., styling won't affect SVG)
+  * some RSs will only sometimes use MathJax (E.g., Readium SDK on iOS using native)
+
+---
+
+# HTML-CSS
+
+* High-quality is possible but font-dependent
+* Medium-quality is possible without font-dependence
+* Difficulties
+  * overflow
+  * reflow
+  * RS CSS frequently cause minor glitches
+
+???
+
+* High-quality is possible but font-dependent
+  * e.g., MathJax "CommonHTML", mathlive, KaTeX
+* Medium-quality is possible without font-dependence
+  * e.g., MathJax "PreviewHTML", jqmath, mathquill
+
+* Difficulties
+  * overflow
+    * scroll not well supported in RSs
+  * reflow
+    * line-breaks in equations are difficult due to authoring (print-focus, tables, manual breaks)
+    * options:
+      * media-queries +  duplicate content
+      * modify content/CSS (artisinal)
+  * RS CSS frequently cause minor glitches
+    * but maybe blame the rendering system here for lack of isolation/resets
+
+---
+
+# SVG
+
+* best for most equation content
+* **always** use inline SVGs
+* SVG can fix "fonts"
+* Difficulties
+  * epubcheck false positives
+  * scaling
+  * surrounding non-whitespace
+  * highlighting
+
+
+???
+* best for most equation content
+  * especially traditional / print layout
+  * i.e., almost all you'll get paid for)
+* **always** use inline SVGs
+  * `currentColor` critical for visual a11y (darkmode)
+  * `title`+`desc` for non-visual a11y
+  * deep links to labeled equations
+* SVG fixes "fonts"
+  * using paths instead of fonts means it cannot be messed up by reading systems
+* Difficulties
+  * epubcheck false positives
+    * role='img'
+    * focusable
+    * aria (-label, -labelledby, hidden)
+    * bad as its needed as workaround for many ATs
+  * most but not all reading systems scale down automatically
+  * moving surrounding non-whitespace (punctuation, hypen) into wrapper to avoid reflow artifacts
+  * selection / highlighting
+    * browser engines lack support
+
+---
+
+# Rendering tools
+
+* Rendering tools for & of the web
+* By Output
+  * HTML+CSS: MathJax, jqmath, mathlive, KaTeX, MathQuill
+  * SVG: MathJax, WIRIS, Generic workflows
+  * Canvas: fmath
+* By Input
+  * MathML: <a href="https://www.mathjax.org">MathJax</a>, <a href="https://mathscribe.com/author/jqmath.html">jqmath</a>, <a href="http://www.fmath.info/mathml.jsp">fmath</a>, CSS stylesheets (Don't!)
+  * Other: <a href="http://mathquill.com/">MathQuill</a>, <a href="http://mathlive.io/">mathlive</a>, <a href="https://khan.github.io/KaTeX/">KaTeX</a>
+  * Proprietary: <a href="http://wiris.com/">WIRIS</a>, <a href="http://sharemath.com/">ShareMath</a>
+
+???
+
+* tools and techniques for rendering mathematics in a web context
+* MathML rendering tools
+  * MathJax, jqmath, fmath
+* CSS stylesheets [Don't!]
+  * cf. web platform incompatibilities MathML vs CSS
+  * http://jkorpela.fi/math/, http://www.zipcon.net/~swhite/docs/math/math.html
+  * https://github.com/search?langOverride=&p=1&q=mathml+css&repo=&start_value=1&type=Repositories
+* other rendering tools
+  * MathQuill, mathlive, KaTeX
+* proprietary solutions (WIRIS, sharemath)
+* Generic workflows (TeX2image)
+
+---
+
+# Accessible equation layout
+
+* native MathML and assistive technology
+* (Non-)Interoparability with web accessibility
+* Tools for equations+web accessibility
+  * Automated: <a href="https://github.com/zorkow/speech-rule-engine">Speech Rule Engine</a> (<a href="https://codepen.io/pkra/full/oWjwNM/">demo</a>) (also: proprietary solutions).<br>
+  * Manual: ARIA labels
+* Other authoring formats and accessibility
+
+???
+* MathML and accessibility
+  * understanding MathML's role
+  * state of assistive technology for "plain" MathML
+    * JAWS
+    * VoiceOver
+    * ChromeVox
+    * MathPlayer
+* no interoperability with other standards (HTML, ARIA etc)
+  * :-(
+* tools for making math content accessible
+  * automated (speech-rule-engine)
+    * proprietary: Desmos, Khan Acadeym
+  * manual (ARIA)
+
+</textarea>
+    <script src="remark.js"></script>
+    <script src="./assets/js/index.js"></script>
+    <script>
+      window.slideshow = remark.create({})
+    </script>
+    <script>
+      
+    </script>
+  </body>
+</html>
