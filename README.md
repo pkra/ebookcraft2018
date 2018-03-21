@@ -28,6 +28,6 @@ Some knowledge of the command line and NodeJS will be useful but not strictly ne
 * [mathml](./01-mathml/build/)
 * [input formats](./02-input/build/)
 * [output formats](./03-output/build/)
-* [tips & tricks](./04-trips/build/)
+* [tips & tricks](./04-tips/build/)
 * [kindle](./05-kindle/build/)
 * [sample](./06-sample/build/)
