@@ -17,7 +17,7 @@ Peter Krautzberger
 
 * mathematician by training
 * 2012-2017 MathJax Manager ([mathjax.org](https://www.mathjax.org))
-* Since 2014 independent consultancy
+* Independent consultant since 2014
 
 <small>
 
