@@ -28,8 +28,7 @@ Peter Krautzberger
 * Making more out of MathML on the web
 
 ???
-* MathML is not maintained: MathML 3 2010/14
-  * MathWG ended 2016, no activity on public lists
+* MathML is not maintained: MathML 3 2010/14, MathWG ended 2016, no activity on public lists
 * IDFP => W3C merger brings publishers' interest; but understanding?
 * browser development by volunteers only and dead
 * similarities and differences
@@ -66,7 +65,7 @@ Either native MathML implementations are not used or web developers do not care.
   * Gecko, WebKit: volunteer work, effectively unmaintained:  (~1 bug fix pa), 1 volunteer developer left
   * [webkit bugs](https://bugs.webkit.org/buglist.cgi?component=MathML&product=WebKit&resolution=---), [VO bugs](https://bugs.webkit.org/buglist.cgi?quicksearch=voiceover%20mathml), [webkit fixed bugs](https://bugs.webkit.org/buglist.cgi?component=MathML&order=changeddate%20DESC%2Cresolution%2Ccomponent%2Cbug_status%2Cpriority%2Cassigned_to%2Cbug_id&product=WebKit&query_format=advanced&resolution=FIXED)
   * [gecko bugs](https://bugzilla.mozilla.org/buglist.cgi?quicksearch=mathml), [gecko fixed bugs](https://bugzilla.mozilla.org/buglist.cgi?short_desc=mathml&resolution=FIXED&query_format=advanced&short_desc_type=allwordssubstr&component=MathML)
-* MathML's limitations
+* MathML's limitations [MDN elements](https://developer.mozilla.org/en-US/docs/Web/MathML/Element), [MDN attributes](https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute)
   * does not specify layout sufficiently (to accurately represent the visual intentions of the author, to ensure appropriate glyphs)
   * designed to capture print layout
   * not integrated well into web platform (adapt to context, reflow, CSS e.g. user stylesheets, RS stylesheets, reading modes, nightmode)
@@ -95,7 +94,7 @@ Either native MathML implementations are not used or web developers do not care.
     * i.e. they expect AT to "just" give the visual
   * semantic
     * provide semantic information that adequately represents the concepts in the equational content
-    * Presentation MathML is void of it
+    * Presentation MathML is void of it, ContentMathML is not around
 * Visual a11y fails, e.g.,
   * mfrac bevelled
   * stretchy fences
