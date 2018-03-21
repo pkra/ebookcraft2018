@@ -28,19 +28,11 @@ Peter Krautzberger
   * non-visual
 
 ???
-* There is no silver bullet
-  * and obviously MathML is not it
-* main factors
-  * platforms
-  * content (amount, type)
-  * expectations (visua&a11y quality)
-  * effort/resources
+* There is no silver bullet (and obviously MathML is not it)
+* main factors: platforms (which?), content (amount, type), expectations (visua&a11y quality), effort/resources
 * real-world solutions
-  * Artisinal equation layout
-    * e.g., https://web.archive.org/web/20170904092652/http://lea.verou.me/2013/03/use-mathml-today-with-css-fallback/
-    * e.g., https://codepen.io/pkra/pen/OQQVgx
-  * HTML+CSS with font dependence
-  * HTML+CSS without font dependence
+  * Artisinal equation layout (e.g., [Lea Verou](https://web.archive.org/web/20170904092652/http://lea.verou.me/2013/03/use-mathml-today-with-css-fallback/), [case study](https://codepen.io/pkra/pen/OQQVgx))
+  * HTML+CSS with/out font dependence
   * SVG
   * binary images
   * native MathML
@@ -74,8 +66,8 @@ Peter Krautzberger
 
 # HTML-CSS
 
-* High-quality is possible but font-dependent
-* Medium-quality is possible without font-dependence
+* High-quality is possible but font-dependent ([sample](../../06-sample/determinant-chtml.xhtml))
+* Medium-quality is possible without font-dependence ([sample](../../06-sample/determinant-phtml.xhtml))
 * Difficulties
   * overflow
   * reflow
@@ -87,10 +79,9 @@ Peter Krautzberger
   * e.g., MathJax "CommonHTML", mathlive, KaTeX
 * Medium-quality is possible without font-dependence
   * e.g., MathJax "PreviewHTML", jqmath, mathquill
-
+* on a "collision" course
 * Difficulties
-  * overflow
-    * scroll not well supported in RSs
+  * overflow -- scroll not well supported in RSs
   * reflow
     * line-breaks in equations are difficult due to authoring (print-focus, tables, manual breaks)
     * options:
@@ -103,7 +94,7 @@ Peter Krautzberger
 
 # SVG
 
-* best for most equation content
+* best for most equation content ([sample](../../06-sample/determinant-svg.xhtml))
 * **always** use inline SVGs
 * SVG can fix "fonts"
 * Difficulties
@@ -114,9 +105,7 @@ Peter Krautzberger
 
 
 ???
-* best for most equation content
-  * especially traditional / print layout
-  * i.e., almost all you'll get paid for)
+* best for most equation content, especially traditional / print layout (i.e., almost all you'll get paid for)
 * **always** use inline SVGs
   * `currentColor` critical for visual a11y (darkmode)
   * `title`+`desc` for non-visual a11y
@@ -124,15 +113,11 @@ Peter Krautzberger
 * SVG fixes "fonts"
   * using paths instead of fonts means it cannot be messed up by reading systems
 * Difficulties
-  * epubcheck false positives
-    * role='img'
-    * focusable
-    * aria (-label, -labelledby, hidden)
-    * bad as its needed as workaround for many ATs
-  * most but not all reading systems scale down automatically
+  * epubcheck false positives: role='img', focusable, aria (-label, -labelledby, hidden)
+    * bad as those workaround many AT issues
+  * most but not all reading systems scale down automatically but can be quirky
   * moving surrounding non-whitespace (punctuation, hypen) into wrapper to avoid reflow artifacts
-  * selection / highlighting
-    * browser engines lack support
+  * selection / highlighting: SVG/browsers lack the concept
 
 ---
 
@@ -170,8 +155,9 @@ Peter Krautzberger
 * (Non-)Interoparability with web accessibility
 * Tools for equations+web accessibility
   * Automated: <a href="https://github.com/zorkow/speech-rule-engine">Speech Rule Engine</a> (<a href="https://codepen.io/pkra/full/oWjwNM/">demo</a>) (also: proprietary solutions).<br>
-  * Manual: ARIA labels
-* Other authoring formats and accessibility
+  * Artisinal: deep ARIA labels
+  * Future: automated deep labels
+* Input formats and accessibility
 
 ???
 * MathML and accessibility
@@ -185,6 +171,7 @@ Peter Krautzberger
   * :-(
 * tools for making math content accessible
   * automated (speech-rule-engine)
-    * proprietary: Desmos, Khan Acadeym
+    * proprietary: Desmos, Khan Academy
   * manual (ARIA)
-
+* input formats can provide decent and even a11y
+  * e.g. higher ed and German non-visual students learn LaTeX early on, that's what they want/need

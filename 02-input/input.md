@@ -30,28 +30,23 @@ Peter Krautzberger
 
 
 ???
-* From linked data: There's no agreed upon data model for equations let alone math
-* we have to start outside the web:
-  * where do people author / what do vendors create
+* There's no agreed upon data model for equations let alone math
+* we have to start outside the web: where do people author / what do vendors create
 * TeX/LaTeX
-  * history
   * strengths: canonical rendering, stable subsets (texvc, mathjax, jats4Reuse), made for human authoring, accessible for proficient users
   * weaknesses: TeX vs LaTeX, layout language, no semantics & not generally accessible, baroque syntax, print-focus, Chomsky Type 0, incompatible half-breeds for the web
 * (Presentation) MathML
-  * history
   * strengths: XML language, W3C and ISO standard
   * weaknesses: does not specify layout (only abstraction thereof), not supported by browser vendors, not made for humans, no semantics / Content MathML is  mess, not accessible
     * state of MathML Editors - a mess
     * vendors quality - a mess
-* [reduce] OMML / unicodeMath
-  * history, example code, https://blogs.msdn.microsoft.com/murrays/2006/10/06/mathml-and-ecma-math-omml/
+* OMML / unicodeMath
   * strengths: part of Microsoft Office XML, canonical rendering, isomorphic XML and plain text format, can be converted to MathML
   * weaknesses: no semantics, limited to Office, poorly documented, licensing issues for tools
-* [reduce] AsciiMath
-  * history, example code
+* AsciiMath
   * strengths: made for tiny humans, easy to convert to MathML or TeX, limited expressivity makes it somewhat accessible
   * weakness: limited expressivity, not well established, not standardized
-* [reduce] programming language syntaxes
+* programming language syntaxes
   * CAS (maple, mathematica), scientific computing (sciPy, R, Julia), general purpose languages (java)
     * example code, e.g. https://reference.wolfram.com/language/guide/MathematicalTypesetting.html
   * strengths: computational ability, perfectly semantic, made for programmers, easily converted to other formats
@@ -110,7 +105,7 @@ Peter Krautzberger
   * keep sources whenever you can, it always adds value
 ---
 
-# Common Challenges
+# Common Challenges in XML workflows
 
 * QA & rendering issues
 * math variants vs Unicode
@@ -153,5 +148,3 @@ Peter Krautzberger
     * commutative diagrams, graphs etc
     * multi-equation alignment
     * mixed content: entry points for XML/HTML
-
----
