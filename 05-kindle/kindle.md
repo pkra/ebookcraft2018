@@ -10,20 +10,22 @@ Peter Krautzberger
 
 ---
 
-# Summary
+# Required reading
 
-* required reading: [What Kindle does behind the scenes, Jiminy Panoz](https://medium.com/@jiminypan/what-kindle-does-behind-the-scenes-3d1be22efce3)
+[What Kindle does behind the scenes, Jiminy Panoz](https://medium.com/@jiminypan/what-kindle-does-behind-the-scenes-3d1be22efce3)
+
+---
+
+# Output formats reviewed
+
 * HTML+CSS - a dumpster fire
-* SVG - with care
+* SVG - maybe
 * PNG - pragmatic
-* Addendum
-  * proprietary formats
-  * Claimed MathML support
+  * [screenshot eink](https://drive.google.com/open?id=1oY_qN94SNeXT6QEacj5nN8yFmDsWmNnQ)
+  * [screenshot android](https://drive.google.com/file/d/1L00alxXlQ_muEeNR-LB5roUSD-BahmVe/view?usp=sharing)
 
 ???
 
-
-* required reading: [What Kindle does behind the scenes, Jiminy Panoz](https://medium.com/@jiminypan/what-kindle-does-behind-the-scenes-3d1be22efce3)
 * HTML+CSS - a dumpster fire
   * fonts are not applied
   * most advanced CSS gets broken
@@ -47,9 +49,18 @@ Peter Krautzberger
     * but convert `ex` to`em`
   * re-write links
   * reduce duplicates
+
+---
+
+# Addendum
+
+* proprietary formats
+* Claimed MathML support
+
+???
 * Addendum: proprietary formats
   * looks like textbookbuilder might provide some magic
-  * but: completely inaccessible
+  * but apparently completely inaccessible (PDF reflow)
     * does not even allow the user to switch fonts
 * Claims towards MathML support
   * https://blog.aboutamazon.com/introducing-new-accessibility-features-on-kindle-and-fire

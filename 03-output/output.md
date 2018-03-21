@@ -153,11 +153,13 @@ Peter Krautzberger
 
 * native MathML and assistive technology
 * (Non-)Interoparability with web accessibility
+* Pragmatic: flat labels
+* Bold: deep labels
 * Tools for equations+web accessibility
-  * Automated: <a href="https://github.com/zorkow/speech-rule-engine">Speech Rule Engine</a> (<a href="https://codepen.io/pkra/full/oWjwNM/">demo</a>) (also: proprietary solutions).<br>
-  * Artisinal: deep ARIA labels
-  * Future: automated deep labels
-* Input formats and accessibility
+  * textual alternatives
+  * Manual or Automated (<a href="https://github.com/zorkow/speech-rule-engine">Speech Rule Engine</a>, <a href="https://codepen.io/pkra/full/oWjwNM/">demo</a>) (also: proprietary solutions).<br>
+  * Input formats
+* Samples [Android talkback + epub3](https://drive.google.com/open?id=1SqlPsX4z4OGLInPmI9XRL6p-dCRjkUF2), [Google Play Books read-aloud](https://drive.google.com/open?id=1RUZUx7WXyL5TchZab1VbKxuVgDlfF7Oe)
 
 ???
 * MathML and accessibility
@@ -169,9 +171,60 @@ Peter Krautzberger
     * MathPlayer
 * no interoperability with other standards (HTML, ARIA etc)
   * :-(
+* flat labels: criticism "unnavigatable" but really just like text
+* deep labels: full exploration (standards and AT limits)
 * tools for making math content accessible
   * automated (speech-rule-engine)
     * proprietary: Desmos, Khan Academy
   * manual (ARIA)
 * input formats can provide decent and even a11y
   * e.g. higher ed and German non-visual students learn LaTeX early on, that's what they want/need
+
+
+---
+
+# Notes on RSs (1 of 3)
+
+- Readium JS / Chrome App
+  - all ok, user font setting is not applied to math but perhaps not intentional
+- Adobe Digital Edition
+  - Windows: C/PHTML ok, SVG ok, a11y: NVDA ok
+  - Android: SVG both, CHTML ok, Talkback OK, PHTML crashes (also: sideloading trouble)
+  - iOS: SVG ok, VO fails on SVG, C/PHTML crashes app
+- Bluefire Cloudshelf
+  - Android: SVG ok (NOTE sets `width:100%`, so `width: auto!important` to fix), C/PHTML ok, talkback ok
+
+<!-- - Bluefire Reader (old)
+  - Android: SVG ok, C/PHTML crash the app (even OS), a11y failure (entire app)
+  - iOS
+    - both SVG ok. No a11y
+    - C/PHTML both crash the app -->
+
+---
+
+# Notes on RSs (2 of 3)
+- iBooks
+  - SVG ok but VO ignores it (cf. notes on aria-labelledby but might also a temporary regression), CHTML ok but VO ignores aria-label, PHTML ok
+- Kobo
+  - Android: SVG ok, CHTML no fonts, PHTML ok, Talkback CHTML ok, SVG skipped
+  - iOS: SVG ok, CHTML glitches, PHTML ok, VO fails on svgs, skips blockCHTML
+- Nook
+  - Android: SVG ok, C/PHTML crashes, talkback+a11ysetting skips SVG
+- Google Play books
+  - Android: SVGs ok (but no longer uploads), CHTML glitches, PHTML ok, talkback ok
+  - Web: a mess.
+
+---
+
+# Notes on RSs (3 of 3)
+
+- Tolino
+  - iOS: SVG ok (despite warning "can't do epub3"), C/PHTML crashes
+  - Android: SVG ok (despite warning "multimedia"), C/PHTML crashes, talkback: can't enter webview
+- random
+  - Edge: all ok. known a11y problems
+      - inline SVGs with pop-out!
+  - Lithium
+      - Android: SVG ok, PHTML ok, CHTML CSS screwed up, talkback ok
+  - Aldiko, Gitden, Helicon etc
+      - old data: works
