@@ -21,3 +21,13 @@ We will dive into pragmatic approaches to solving the most common production pro
 The workshop will combine practical advice from several years of R&D, introduce you to open-source tools that help you handle equational content and get you started on integrating these tools with your own production workflow. The techniques we apply will build on well-established and open-source software so as to remain flexible as your tool chain (and ebook platforms) evolve.
 
 Some knowledge of the command line and NodeJS will be useful but not strictly necessary.
+
+## Slides
+
+* [introduction](./00-intro/build/)
+* [mathml](./01-mathml/build/)
+* [input formats](./02-input/build/)
+* [output formats](./03-output/build/)
+* [tips & tricks](./04-trips/build/)
+* [kindle](./05-kindle/build/)
+* [sample](./06-sample/build/)
